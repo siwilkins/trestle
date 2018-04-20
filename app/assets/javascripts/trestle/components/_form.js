@@ -1,9 +1,11 @@
 // Prevent enter key from submitting the form
+// Disabled as I want to submit on enter (SW)
+/*
 $(document).on('keypress', 'form[data-behavior="trestle-form"] :input:not(textarea):not([type=submit])', function(e) {
   if (e.keyCode == 13) {
     e.preventDefault();
   }
-});
+});*/
 
 Trestle.init(function(e, root) {
   var form = $(root).find('form[data-behavior="trestle-form"]');
